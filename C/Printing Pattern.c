@@ -6,22 +6,22 @@
 int main() 
 {
 
-    int n,len,i,j;
-    scanf("%d", &n);
+    int m,len,i,j;
+    scanf("%d", &m);
   	// Complete the code to print the pattern.
-    int size=2*n-1;
+    int size=2*m-1;
     int a[size][size], start=0, end=size-1;
-    while(n!=0)
+    while(m!=0)
     {
     for(i=start;i<=end;i++)
       for(j=start;j<=end;j++)
       {
         if(i==start || j==start || i==end || j==end)
-          a[i][j]=n;
+          a[i][j]=m;
       }
       ++start;
       --end;
-      --n;
+      --m;
     }
 
       for(i=0;i<size;i++)
